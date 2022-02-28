@@ -1,4 +1,4 @@
-# proovitöö
+# Proovitöö
 
 Projekt koosneb kahest osast:
 1. Esirakendusest
