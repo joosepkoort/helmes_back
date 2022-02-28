@@ -15,8 +15,6 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.util.List;
 
-
-
 @SpringBootTest(classes = Main.class)
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes=Main.class)
@@ -26,6 +24,7 @@ public class OtherTests {
     public void setUp() throws Exception {
 
     }
+    
     @Test
     public void treeEqualsConstructedTree() {
         try {
@@ -41,5 +40,4 @@ public class OtherTests {
             e.printStackTrace();
         }
     }
-
 }
