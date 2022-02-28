@@ -28,3 +28,6 @@ Samuti on võimalik näha API-endpointe ka aadressilt http://turing.cs.ttu.ee:99
 
 ## Lehekülg rakendusega:
 http://turing.cs.ttu.ee/~jokoor 
+
+## Testid
+Rakendus sisaldab teste erinevate api-endpointide testmiseks koos autentimisega ja puustruktuuri genereerimise valideerimist.
