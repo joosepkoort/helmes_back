@@ -30,4 +30,4 @@ API-endpointe on võimalik näha aadressilt http://turing.cs.ttu.ee:9998/swagger
 http://turing.cs.ttu.ee/~jokoor 
 
 ## Testid
-Rakendus sisaldab teste erinevate api-endpointide testmiseks koos autentimisega ja puustruktuuri genereerimise valideerimist.
+Tagarakendus sisaldab teste erinevate api-endpointide testmiseks koos autentimisega ja puustruktuuri genereerimise valideerimist.
