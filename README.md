@@ -20,7 +20,7 @@ Täpsemalt on võimalik näha andmebaasi välju juurdelisatud exceli failist.<br
 Struktuuri kohta olen lisanud ka pildi.
 
 ## API endpoints:
-Samuti on võimalik näha API-endpointe ka aadressilt http://turing.cs.ttu.ee:9998/swagger-ui/index.html
+Samuti on võimalik näha API-endpointe ka aadressilt http://turing.cs.ttu.ee:9998/swagger-ui/index.html või teenuse lokaalselt jooksutamisel aadressilt http://localhost:9998/swagger-ui/index.html
 
 ## Olemasolevat kasutajad:
 - kasutajanimi: **userhelmes**, password: **userhelmes**
