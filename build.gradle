@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.3'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.helmes'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'junit:junit:4.13.2'
+	testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
+	testImplementation 'org.mockito:mockito-inline:4.3.1'
+	testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '4.3.1'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'org.hsqldb:hsqldb'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation group: 'org.hsqldb', name: 'hsqldb', version: '2.6.1'
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+	implementation group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.5.1.RELEASE'
+	testImplementation group: 'org.springframework.security', name: 'spring-security-test', version: '4.2.3.RELEASE'
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.1'
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
+	implementation group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+	implementation group: 'org.jsoup', name: 'jsoup', version: '1.14.3'
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.6'
+
+}
+
+test {
+	useJUnitPlatform()
+}
