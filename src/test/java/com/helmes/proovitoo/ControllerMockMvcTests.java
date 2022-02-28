@@ -42,7 +42,7 @@ class ControllerMockMvcTests {
 
     @Test
     protected void testUserLogin() throws Exception {
-        String json = "{ \"userName\": \"kasutaja\",\n" + "\"password\": \"kasutaja\"}";
+        String json = "{ \"userName\": \"userhelmes\",\n" + "\"password\": \"userhelmes\"}";
         MvcResult mvcResult = mockMvc.perform(MockMvcRequestBuilders
                         .post("/api/login")
                         .content(json)
@@ -56,9 +56,9 @@ class ControllerMockMvcTests {
     }
 
     @Test
-    @WithMockUser(username = "kasutaja", password = "kasutaja", roles = "USER")
+    @WithMockUser(username = "userhelmes", password = "userhelmes", roles = "USER")
     protected void testUserGetTreeData() throws Exception {
-        String json = "{ \"userName\": \"kasutaja\",\n" + "\"password\": \"kasutaja\"}";
+        String json = "{ \"userName\": \"userhelmes\",\n" + "\"password\": \"userhelmes\"}";
         this.mockMvc
                 .perform(get("/api/tree").header(HttpHeaders.AUTHORIZATION,
                         bearerToken))
@@ -66,9 +66,9 @@ class ControllerMockMvcTests {
     }
 
     @Test
-    @WithMockUser(username = "kasutaja", password = "kasutaja", roles = "USER")
+    @WithMockUser(username = "userhelmes", password = "userhelmes", roles = "USER")
     protected void testUserGetPersonalData() throws Exception {
-        String json = "{ \"userName\": \"kasutaja\",\n" + "\"password\": \"kasutaja\"}";
+        String json = "{ \"userName\": \"userhelmes\",\n" + "\"password\": \"userhelmes\"}";
         this.mockMvc
                 .perform(get("/api/data").header(HttpHeaders.AUTHORIZATION,
                         bearerToken))
@@ -76,7 +76,7 @@ class ControllerMockMvcTests {
     }
 
     @Test
-    @WithMockUser(username = "kasutaja", password = "kasutaja", roles = "USER")
+    @WithMockUser(username = "userhelmes", password = "userhelmes", roles = "USER")
     protected void testUpdateDataUserAgreed() throws Exception {
         String json = "\n" +
                 "{ \"name\" : \"bba\", \n" +
@@ -92,7 +92,7 @@ class ControllerMockMvcTests {
                 .andReturn();
     }
     @Test
-    @WithMockUser(username = "kasutaja", password = "kasutaja", roles = "USER")
+    @WithMockUser(username = "userhelmes", password = "userhelmes", roles = "USER")
     protected void testUpdateDataUserDisagreed() throws Exception {
         String json = "\n" +
                 "{ \"name\" : \"bba\", \n" +
@@ -108,7 +108,7 @@ class ControllerMockMvcTests {
                 .andReturn();
     }
     @Test
-    @WithMockUser(username = "kasutaja", password = "kasutaja", roles = "USER")
+    @WithMockUser(username = "userhelmes", password = "userhelmes", roles = "USER")
     protected void testUpdateDataNameEmpty() throws Exception {
         String json = "\n" +
                 "{ \"name\" : \"\", \n" +
@@ -124,7 +124,7 @@ class ControllerMockMvcTests {
                 .andReturn();
     }
     @Test
-    @WithMockUser(username = "kasutaja", password = "kasutaja", roles = "USER")
+    @WithMockUser(username = "userhelmes", password = "userhelmes", roles = "USER")
     protected void testUpdateDataSelectedSectorsNull() throws Exception {
         String json = "\n" +
                 "{ \"name\" : \"\", \n" +
