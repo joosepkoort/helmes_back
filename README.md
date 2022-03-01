@@ -33,5 +33,6 @@ http://turing.cs.ttu.ee/~jokoor
 Tagarakendus sisaldab teste erinevate api-endpointide testmiseks koos autentimisega ja puustruktuuri genereerimise valideerimist.
 
 ## Sisselogitud olekus olev vaade:
-![image](https://user-images.githubusercontent.com/7001273/156122927-9ed687b5-311d-406d-a6bd-0ca0aa5cc908.png)
+![value](https://user-images.githubusercontent.com/7001273/156125546-8f4ea074-840a-4751-b634-0af09d73ad26.JPG)
+
 
